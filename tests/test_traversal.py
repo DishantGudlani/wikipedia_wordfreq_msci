@@ -28,7 +28,10 @@ def fake_fetch_article_html(title: str) -> str:
 def test_traverse_depth_zero(mock_fetch):
     text = traverse_articles("Python", max_depth=0)
     assert "Python programming" in text
-    assert "linked page" not in text.lower()
+    # At depth 0, we should NOT fetch the linked page's content,
+    # but the anchor text "Linked Page" WILL appear because it's in the HTML.
+    assert "this is the linked page with some extra content" not in text.lower()
+
 
 
 @patch("wikipedia_traversal.fetch_article_html", side_effect=fake_fetch_article_html)

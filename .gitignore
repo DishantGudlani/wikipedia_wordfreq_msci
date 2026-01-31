@@ -1,0 +1,42 @@
+# --- Python ---
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pdb
+*.egg-info/
+*.egg
+*.log
+
+# Virtual environment
+venv/
+wiki_venv/
+
+# Unit test cache
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Byte-compiled / optimized / DLL files
+*.so
+
+# --- macOS ---
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+
+# iCloud artifacts
+*.icloud
+
+# --- Editors / IDEs ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Project-specific ---
+# Ignore local environment variables or config overrides
+.env
+.env.*
