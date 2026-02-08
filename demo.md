@@ -5,12 +5,12 @@ GET /timestamp — returns the most recently stored timestamp
 The assignment demonstrates containerization, Kubernetes deployments, and basic service exposure.
 
 ## Project Structure
-.
+```.
 ├── main.go
 ├── main_test.go
 ├── Dockerfile
 └── k8s.yaml
-
+```
 ## How the Application Works
 - The server starts and exposes two endpoints on port 8080.
 - The client sends a POST request with the current Unix timestamp.
@@ -23,7 +23,7 @@ STATUS: Completed
 ```
 This is expected behavior.
 
-## Build and Run Locally
+##Build and Run Locally
 - Run tests
 ```bash
 go test ./...
